@@ -8,7 +8,7 @@ import pickle
 
 
 #load the trained model 
-model = tf.keras.models.load_model('churn_Model.h5')
+model = tf.keras.models.load_model('churn_model.h5')
 
 
 #Load the encoder and scaler
