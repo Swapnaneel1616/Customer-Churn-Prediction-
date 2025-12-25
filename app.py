@@ -8,18 +8,18 @@ import pickle
 
 
 #load the trained model 
-model = tf.keras.models.load_model('./churn_Model.h5')
+model = tf.keras.models.load_model('churn_Model.h5')
 
 
 #Load the encoder and scaler
 
-with open('./label_encoder_gender.pkl', 'rb') as f:
+with open('label_encoder_gender.pkl', 'rb') as f:
     label_encoder_gender = pickle.load(f)
 
-with open('./onehot_encoder_geo.pkl', 'rb') as f:
+with open('onehot_encoder_geo.pkl', 'rb') as f:
     onehot_encoder_geography = pickle.load(f)
 
-with open('./scaler.pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 
